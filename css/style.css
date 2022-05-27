@@ -1,0 +1,219 @@
+/* Fonts ROBOTO */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Fonts OXYGEN */
+
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 8px;
+} */
+
+
+/* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px #808080;
+    border-radius: 10px;
+} */
+
+
+/* Handle */
+
+
+/* ::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+} */
+
+
+/* Handle on hover */
+
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #f10000;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oxygen", sans-serif;
+}
+
+.padding {
+    padding: 12px;
+}
+
+.padding-6 {
+    padding: 6px;
+}
+
+
+/* NAVBAR */
+
+.navbar .navbar-left .img-logo {
+    width: 50px;
+}
+
+.navbar .navbar-collapse .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-collapse .dropdown-menu {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+
+/* BACKGROUND NAVBAR BOTTOM */
+
+.container-area {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img-homepage {
+    /* The image used */
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("../images/homepage.jpg");
+    height: 350px;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.glow {
+    font-size: 54px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.marquee {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ff0000;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* SECTION ON STYLES */
+
+.section-content .row-section-content .title-section-content {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0px 10px 5px;
+    border-bottom: 2px solid #ff0000;
+}
+
+.section-content .row-section-content .span-section-content a {
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+}
+
+.section-content .row-section-content .span-section-content a:hover {
+    text-decoration: none;
+}
+
+.section-content .row-section-content .img-section-content {
+    padding: 0;
+}
+
+.section-content .row-section-content .img-section-content img {
+    width: 100%;
+    height: auto;
+}
+
+.section-content .row-section-content .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)); */
+}
+
+.section-content .row-section-content .carousel-inner .carousel-caption h5 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-content .row-section-content .carousel-inner .carousel-caption h5 {
+        font-size: 19px;
+    }
+    .section-content .row-section-content .span-section-content a {
+        font-size: 23px;
+    }
+    .glow {
+        font-size: 47px;
+    }
+    .marquee {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991.20px) {
+    .section-content .row-section-content .carousel-inner .carousel-caption h5 {
+        font-size: 24px;
+    }
+    .section-content .row-section-content .span-section-content a {
+        font-size: 24px;
+    }
+    .glow {
+        font-size: 46px;
+    }
+    .marquee {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-content .row-section-content .carousel-inner .carousel-caption h5 {
+        font-size: 20px;
+    }
+    .section-content .row-section-content .span-section-content a {
+        font-size: 20px;
+    }
+    .glow {
+        font-size: 44px;
+    }
+    .marquee {
+        font-size: 12px;
+    }
+}

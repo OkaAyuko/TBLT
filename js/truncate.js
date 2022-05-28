@@ -1,6 +1,9 @@
 new Cuttr('.link-section-content', {
-    //options here
-    truncate: 'words',
-    length: 20,
+    length: 150,
+    ending: '...'
+});
+
+new Cuttr('.link-right-column', {
+    length: 110,
     ending: '...'
 });

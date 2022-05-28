@@ -43,6 +43,10 @@ body {
     background: #f10000;
 } */
 
+hr {
+    background-color: #4c4c4c;
+}
+
 h1,
 h2,
 h3,
@@ -137,6 +141,7 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 0px 10px 5px;
+    font-family: 'Arial', sans-serif;
     border-bottom: 2px solid #ff0000;
 }
 
@@ -173,6 +178,136 @@ h6 {
     font-family: 'Arial', sans-serif;
 }
 
+.section-content .row-section-content .col-right-column .row-right-column {
+    border-left: 1.4px solid #0000003a;
+}
+
+.section-content .row-section-content .col-right-column .row-right-column .title-section-content {
+    margin-left: 15px;
+}
+
+.section-content .row-section-content .col-right-column .row-right-column .img-right-column img {
+    width: 280px;
+    height: 160px;
+}
+
+.section-content .row-section-content .col-right-column .row-right-column .span-right-column .link-right-column {
+    color: #4c4c4c;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.section-content .row-section-content .col-right-column .row-right-column .span-right-column .link-right-column:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* footer */
+
+.footer {
+    background: url("../images/icon/backgroud-footer.png");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.footer .col-footer-logo {
+    padding: 20px;
+}
+
+.footer .logo-in-footer {
+    background-color: #2f3640;
+    width: 140px;
+}
+
+.footer .support-link,
+.footer .contact,
+.footer .location {
+    color: #1b1b1b;
+    font-size: 28px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff0000;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer .col-footer li,
+.footer .col-footer li a {
+    color: #4c4c4c;
+}
+
+.footer .col-footer li a {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.footer .col-footer .icon-support-link a {
+    color: #4c4c4c;
+}
+
+.footer .col-footer .icon-support-link a:hover,
+.footer .col-footer li a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer .col-footer .icon-support-link i {
+    position: relative;
+    text-align: center;
+    width: 44px;
+    height: 40px;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.footer .col-footer p {
+    font-size: 17px;
+}
+
+.footer .col-footer p b {
+    color: #ff0000;
+}
+
+.footer .logo-country {
+    width: 90px;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Button Scroll Up */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    color: #000000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+button img {
+    width: 40px;
+    height: 40px;
+}
+
 @media screen and (max-width: 1200px) {
     .section-content .row-section-content .carousel-inner .carousel-caption h5 {
         font-size: 19px;
@@ -189,6 +324,16 @@ h6 {
 }
 
 @media screen and (max-width: 991.20px) {
+    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img {
+        width: 100%;
+        height: 180px;
+    }
+    .section-content .row-section-content .col-right-column .row-right-column .title-section-content {
+        margin-left: 0;
+    }
+    .section-content .row-section-content .col-right-column .row-right-column {
+        border-left: 0px;
+    }
     .section-content .row-section-content .carousel-inner .carousel-caption h5 {
         font-size: 24px;
     }
@@ -204,6 +349,10 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img {
+        width: 100%;
+        height: 140px;
+    }
     .section-content .row-section-content .carousel-inner .carousel-caption h5 {
         font-size: 20px;
     }
@@ -215,5 +364,12 @@ h6 {
     }
     .marquee {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img {
+        width: 100%;
+        height: 210px;
     }
 }

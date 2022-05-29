@@ -135,14 +135,15 @@ h6 {
 
 /* SECTION ON STYLES */
 
-.section-content .row-section-content .title-section-content {
+.section-content .row-section-content .title-section-content,
+.section-content .row-section-with-ads .title-section-content {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 0px 10px 5px;
     font-family: 'Arial', sans-serif;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 1.4px solid #0000003a;
 }
 
 .section-content .row-section-content .span-section-content a {
@@ -191,14 +192,31 @@ h6 {
     height: 160px;
 }
 
-.section-content .row-section-content .col-right-column .row-right-column .span-right-column .link-right-column {
+.section-content .row-section-with-ads .col-section-with-ads .img-second-with-ads img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+.section-content .row-section-with-ads .col-section-with-ads .img-second-with-ads img:hover {
+    opacity: 0.75;
+}
+
+.section-content .row-section-with-ads .col-section-with-ads .row-first-without-ads .img-left-without-ads img {
+    width: 100%;
+    height: 190px;
+}
+
+.section-content .row-section-content .col-right-column .row-right-column .span-right-column .link-right-column,
+.section-content .row-section-with-ads .col-section-with-ads .row-first-without-ads .span-left-without-ads .link-left-without-ads {
     color: #4c4c4c;
     font-weight: 600;
     font-size: 18px;
     text-transform: capitalize;
 }
 
-.section-content .row-section-content .col-right-column .row-right-column .span-right-column .link-right-column:hover {
+.section-content .row-section-content .col-right-column .row-right-column .span-right-column .link-right-column:hover,
+.section-content .row-section-with-ads .col-section-with-ads .row-first-without-ads .span-left-without-ads .link-left-without-ads:hover {
     color: #000000;
     text-decoration: none;
 }
@@ -228,7 +246,7 @@ h6 {
     color: #1b1b1b;
     font-size: 28px;
     letter-spacing: 1px;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 1.4px solid #0000003a;
     font-weight: 600;
     font-family: 'Arial', sans-serif;
 }
@@ -298,19 +316,23 @@ h6 {
     font-size: 15px;
     border: none;
     outline: none;
-    background-color: #f2f2f2;
+    background-color: #fff;
     color: #000000;
     cursor: pointer;
-    padding: 15px;
+    padding: 6px;
     border-radius: 50%;
 }
 
 button img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 @media screen and (max-width: 1200px) {
+    .section-content .row-section-with-ads .col-section-with-ads .row-first-without-ads .img-left-without-ads img {
+        width: 100%;
+        height: 160px;
+    }
     .section-content .row-section-content .carousel-inner .carousel-caption h5 {
         font-size: 19px;
     }
@@ -326,7 +348,8 @@ button img {
 }
 
 @media screen and (max-width: 991.20px) {
-    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img {
+    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img,
+    .section-content .row-section-with-ads .col-section-with-ads .row-first-without-ads .img-left-without-ads img {
         width: 100%;
         height: 180px;
     }
@@ -351,7 +374,8 @@ button img {
 }
 
 @media screen and (max-width: 768px) {
-    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img {
+    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img,
+    .section-content .row-section-with-ads .col-section-with-ads .row-first-without-ads .img-left-without-ads img {
         width: 100%;
         height: 140px;
     }
@@ -370,8 +394,9 @@ button img {
 }
 
 @media screen and (max-width: 567px) {
-    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img {
+    .section-content .row-section-content .col-right-column .row-right-column .img-right-column img,
+    .section-content .row-section-with-ads .col-section-with-ads .row-first-without-ads .img-left-without-ads img {
         width: 100%;
-        height: 210px;
+        height: 260px;
     }
 }
